@@ -8,6 +8,6 @@ export default defineConfig({
   },
   define: {
     // Replace environment variables in index.html
-    '%VITE_GOOGLE_MAPS_API_KEY%': JSON.stringify(process.env.VITE_GOOGLE_MAPS_API_KEY)
+    'import.meta.env.VITE_GOOGLE_MAPS_API_KEY': JSON.stringify(process.env.VITE_GOOGLE_MAPS_API_KEY)
   }
 });
